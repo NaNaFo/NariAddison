@@ -1,9 +1,12 @@
 <resources>
     <string name="app_name">NariAddison</string>
-    <string name="Med1">Hydrocortison:</string>
-    <string name="Med2">Florinef:</string>
-    <string name="Med3">Hydrocortison:</string>
-    <string name="Dos1">1 x 5 mg</string>
-    <string name="Dos2">5 x 0,1 mg</string>
-    <string name="Dos3">1 x 5 mg</string>
+    <string name="Med1">Morgens:</string>
+    <string name="Med2">Mittags:</string>
+    <string name="Med3">Abends:</string>
+    <string name="Dos1"> Hydrocortison \n 1 x 5 mg</string>
+    <string name="Dos2"> Florinef \n 5 x 0,1 mg</string>
+    <string name="Dos3"> Hydrocortison \n 1 x 5 mg</string>
+    <string name="MedikamenteHeader">Medikamente</string>
+    <string name="ArztbesucheHeader">Arztbesuche</string>
+    <string name="ArchivHeader">Archiv</string>
 </resources>

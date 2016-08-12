@@ -9,115 +9,134 @@
     android:background="@color/colorPrimaryDark"
     android:orientation="vertical">
 
- <TextClock
-     android:id="@+id/Clock"
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     android:background="@color/colorPrimaryDark"
-     android:padding="16dp"
-     android:textColor="@android:color/white"
-     android:textSize="24sp"
-     android:format12Hour="dd MMMM yyyy"
-     android:format24Hour="dd MMMM yyyy"
-     tools:targetApi="jelly_bean_mr1"
-     android:layout_gravity="right" />
+    <TextClock
+        android:id="@+id/Clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@color/colorPrimaryDark"
+        android:format12Hour="dd MMMM yyyy"
+        android:format24Hour="dd MMMM yyyy"
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        tools:targetApi="jelly_bean_mr1" />
 
- <LinearLayout
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:orientation="horizontal"
-     android:layout_marginLeft="16dp">
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="16dp"
+        tools:targetApi="n" />
 
-  <TextView
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:textColor="@android:color/white"
-      android:layout_weight="1"
-      android:textSize="20sp"
-      android:text="@string/Med1" />
-  <TextView
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:textColor="@android:color/white"
-      android:layout_weight="1"
-      android:textSize="20sp"
-      android:text="@string/Med2" />
-  <TextView
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:textColor="@android:color/white"
-      android:layout_weight="1"
-      android:textSize="20sp"
-      android:text="@string/Med3" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:orientation="horizontal">
 
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Med1"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
- </LinearLayout>
- <LinearLayout
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:padding="12dp"
-     android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Med2"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
-  <CheckBox
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:textColor="@android:color/white"
-      android:layout_weight="1"
-      android:textSize="16sp"
-      android:textStyle="italic"
-      android:checked="false"
-      android:clickable="true"
-      android:text="@string/Dos1" />
-  <CheckBox
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:textColor="@android:color/white"
-      android:textStyle="italic"
-      android:layout_weight="1"
-      android:textSize="16sp"
-      android:checked="false"
-      android:clickable="true"
-      android:text="@string/Dos2" />
-  <CheckBox
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:textColor="@android:color/white"
-      android:layout_weight="1"
-      android:textSize="16sp"
-      android:textStyle="italic"
-      android:checked="false"
-      android:clickable="true"
-      android:text="@string/Dos3" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Med3"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
 
- </LinearLayout>
+    </LinearLayout>
 
- <TextView
-     android:id="@+id/T1"
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:background="@color/colorContras"
-     android:textColor="@android:color/white"
-     android:padding="16dp"
-     tools:text="Test 1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
 
- <TextView
-     android:id="@+id/T2"
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:background="@color/colorAccent"
-     android:padding="16dp"
-     android:textColor="@android:color/white"
-     tools:text="Test 2" />
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:clickable="true"
+            android:text="@string/Dos1"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="italic" />
 
- <TextView
-     android:id="@+id/T3"
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:background="@color/colorPrimary"
-     android:padding="16dp"
-     android:textColor="@android:color/white"
-     tools:text="Test 3" />
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:clickable="true"
+            android:text="@string/Dos2"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:clickable="true"
+            android:text="@string/Dos3"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/T1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorContras"
+        android:padding="16dp"
+        android:text="@string/MedikamenteHeader"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/T2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="16dp"
+        android:text="@string/ArztbesucheHeader"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/T3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="16dp"
+        android:text="@string/ArchivHeader"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
 
 
 </LinearLayout>
