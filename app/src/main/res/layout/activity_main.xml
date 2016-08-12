@@ -9,29 +9,104 @@
     android:background="@color/colorPrimaryDark"
     android:orientation="vertical">
 
- <TextView
-     android:id="@+id/T4"
-     android:layout_width="match_parent"
+ <TextClock
+     android:id="@+id/Clock"
+     android:layout_width="wrap_content"
      android:layout_height="wrap_content"
+     android:background="@color/colorPrimaryDark"
      android:padding="16dp"
      android:textColor="@android:color/white"
-     android:background="@color/colorPrimaryDark"
-     tools:text="Test 4" />
+     android:textSize="24sp"
+     android:format12Hour="dd MMMM yyyy"
+     android:format24Hour="dd MMMM yyyy"
+     tools:targetApi="jelly_bean_mr1"
+     android:layout_gravity="right" />
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:layout_marginLeft="16dp">
+
+  <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textColor="@android:color/white"
+      android:layout_weight="1"
+      android:textSize="20sp"
+      android:text="@string/Med1" />
+  <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textColor="@android:color/white"
+      android:layout_weight="1"
+      android:textSize="20sp"
+      android:text="@string/Med2" />
+  <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textColor="@android:color/white"
+      android:layout_weight="1"
+      android:textSize="20sp"
+      android:text="@string/Med3" />
+
+
+ </LinearLayout>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:padding="12dp"
+     android:orientation="horizontal">
+
+  <CheckBox
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textColor="@android:color/white"
+      android:layout_weight="1"
+      android:textSize="16sp"
+      android:textStyle="italic"
+      android:checked="false"
+      android:clickable="true"
+      android:text="@string/Dos1" />
+  <CheckBox
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textColor="@android:color/white"
+      android:textStyle="italic"
+      android:layout_weight="1"
+      android:textSize="16sp"
+      android:checked="false"
+      android:clickable="true"
+      android:text="@string/Dos2" />
+  <CheckBox
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textColor="@android:color/white"
+      android:layout_weight="1"
+      android:textSize="16sp"
+      android:textStyle="italic"
+      android:checked="false"
+      android:clickable="true"
+      android:text="@string/Dos3" />
+
+
+ </LinearLayout>
 
  <TextView
      android:id="@+id/T1"
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
-     android:padding="16dp"
      android:background="@color/colorContras"
+     android:textColor="@android:color/white"
+     android:padding="16dp"
      tools:text="Test 1" />
 
  <TextView
      android:id="@+id/T2"
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
-     android:padding="16dp"
      android:background="@color/colorAccent"
+     android:padding="16dp"
      android:textColor="@android:color/white"
      tools:text="Test 2" />
 
@@ -39,12 +114,10 @@
      android:id="@+id/T3"
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
-     android:textColor="@android:color/white"
-     android:padding="16dp"
      android:background="@color/colorPrimary"
+     android:padding="16dp"
+     android:textColor="@android:color/white"
      tools:text="Test 3" />
-
-
 
 
 </LinearLayout>
